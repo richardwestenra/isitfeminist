@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>isitfeminist</title>
+    <title>Is it feminist?</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
@@ -24,13 +24,24 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="wrapper">
-      <h1 id="question"></h1>
-      <nav>
-        <button id="yes">Yes</button>
-        <button id="no">No</button>
-      </nav>
-    </div>
+    <main id="container" class="wrapper">
+
+      <section id="question" class="" aria-hidden="false">
+        <h1></h1>
+        <nav>
+          <button>Yes</button>
+          <button>No</button>
+        </nav>
+      </section>
+
+      <section id="response" class="hidden" aria-hidden="true">
+        <h1></h1>
+        <nav>
+          <button>Ask me another!</button>
+        </nav>
+      </section>
+
+    </main>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -49,6 +60,7 @@
 
     <!-- build:js scripts/main.js -->
     <script src="scripts/nouns.js"></script>
+    <script src="scripts/responses.js"></script>
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
   </body>
